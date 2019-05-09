@@ -15,8 +15,7 @@ const getTableDates = () => {
 
   return calendar.map(date => ({
     week: isToday(date, today) ? 'HOJE' : format(date, 'dddd').split('-')[0],
-    day: format(date, 'DD'),
-    month: format(date, 'MMMM'),
+    month: format(date, 'DD MMMM'),
   }));
 };
 
